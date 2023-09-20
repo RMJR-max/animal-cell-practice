@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Plant Cell labelling practice</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-1.css">
+</head>
+
+</head>
+<body>
+
+  <!--<p id="p1" draggable="true" >This element is draggable.</p>-->
+  <p class="answer_nucleus" id="nucleus" draggable="true" >nucleus</p> 
+  <p class="answer_ribosome" id="ribosome" draggable="true" >ribosomes</p>
+  <p class="answer_cytoplasm" id="cytoplasm" draggable="true" >cytoplasm</p>
+  <p class="answer_vacuole" id="vacuole" draggable="true" >vacuole</p>
+  <p class="answer_cell_membrane" id="cell_membrane" draggable="true" >cell membrane</p>
+  <p class="answer_mitochondrion" id="mitochondrion" draggable="true" >mitochondrion</p>
+
+<form autocomplete = "off" action="#" onsubmit = "process();return false">
+  <input type="text" class="nucleus_entry" id="nucleus_entry" >
+  <input type="text" class="mitochondrion_entry" id="mitochondrion_entry" >
+  <input type="text" class="ribosome_entry" id="ribosome_entry" placeholder="">
+  <input type="text" class="cytoplasm_entry box" id="cytoplasm_entry" placeholder="">
+  <input type="text" class="vacuole_entry" id="vacuole_entry"  placeholder="">
+  <input type="text" class="cell_membrane_entry" id="cell_membrane_entry" placeholder="">
+  <input type="text" class="score_entry" id="score_entry" placeholder="0/6" disabled="disabled">
+  
+</form>
+<center>
+  <img src="animal_cell.png" class="image_entry" id="plant_cell" draggable="false" >
+</center> 
+
+<button class="hide_entry" onclick="hide_choices()" id="hide_choices">Hide Choices</button>
+<button class="show_entry" onclick="show_choices()" id="show_choices">Show Choices</button>
+<button class="answers_entry" onclick="show_answers()" id="show_answers">Show Answers</button>
+
+
+<div class="stopwatch-wrapper">
+  <p class="stopwatch">00:00:00:00</p>
+  <div class="control-buttons-wrapper">
+    <button id="main-button" class="control-buttons">Start Timer</button>
+    <button id="clear-button" class="control-buttons">Cancel/Restart</button>
+  </div>
+</div>
+<script src="script-1.js"></script>
+</body>
+
+</html> 
